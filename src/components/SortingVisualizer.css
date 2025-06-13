@@ -1,0 +1,21 @@
+.bar-container {
+  display: flex;
+  align-items: flex-end;
+  height: 220px;
+  margin-top: 30px;
+  border-bottom: 1px solid #ddd;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem 0;
+  justify-content: center;
+}
+.array-bar {
+  width: 24px;
+  margin: 0 4px;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 2px 8px rgba(52,152,219,0.10);
+  transition: height 0.3s, background-color 0.3s;
+}
+
