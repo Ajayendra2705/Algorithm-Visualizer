@@ -1,0 +1,21 @@
+.bar-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 400px;
+  border: 2px solid #ccc;
+  background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+  margin: 20px auto;
+  max-width: 90%;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  transition: height 0.2s ease, background-color 0.2s ease;
+  border-radius: 4px 4px 0 0;
+}
