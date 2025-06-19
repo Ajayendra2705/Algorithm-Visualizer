@@ -53,17 +53,17 @@ const SortingPage = () => {
     <div className="sorting-page">
       <div className="controls">
         <div className="row">
-          <button onClick={generateArray}>🔄 Generate Array</button>
-          <button onClick={() => bubbleSort(array, setArray, speedRef, playTone)}>🫧 Bubble Sort</button>
-          <button onClick={() => selectionSort(array, setArray, speedRef, playTone)}>📌 Selection Sort</button>
-          <button onClick={() => insertionSort(array, setArray, speedRef, playTone)}>📥 Insertion Sort</button>
-          <button onClick={() => mergeSort(array, setArray, speedRef, playTone)}>🔀 Merge Sort</button>
-          <button onClick={() => quickSort(array, setArray, speedRef, playTone)}>⚡ Quick Sort</button>
+          <button onClick={generateArray}>Generate Array</button>
+          <button onClick={() => bubbleSort(array, setArray, speedRef, playTone)}>Bubble Sort</button>
+          <button onClick={() => selectionSort(array, setArray, speedRef, playTone)}>Selection Sort</button>
+          <button onClick={() => insertionSort(array, setArray, speedRef, playTone)}>Insertion Sort</button>
+          <button onClick={() => mergeSort(array, setArray, speedRef, playTone)}>Merge Sort</button>
+          <button onClick={() => quickSort(array, setArray, speedRef, playTone)}>Quick Sort</button>
         </div>
 
         <div className="row slider-row">
           <label>Speed:</label>
-          <span>🐢 Slow</span>
+          <span>Slow</span>
           <input
             type="range"
             min="1"
@@ -71,7 +71,7 @@ const SortingPage = () => {
             value={2001 - speed}
             onChange={(e) => setSpeed(2001 - Number(e.target.value))}
           />
-          <span>⚡ Fast</span>
+          <span>Fast</span>
 
           <label>
             <input
@@ -79,27 +79,46 @@ const SortingPage = () => {
               checked={audioEnabled}
               onChange={() => setAudioEnabled(!audioEnabled)}
             />
-            🔈 Audio
+            Audio
           </label>
         </div>
       </div>
 
       <div className="bar-container">
         {array.map((bar, index) => (
-          <div
+            <div
             key={index}
             className="bar"
             style={{
-              height: `${bar.value}px`,
-              backgroundColor: bar.color,
-              width: `${100 / array.length}%`,
-              position: 'relative',
+                height: `${bar.value}px`,
+                backgroundColor: bar.color,
+                width: `${100 / array.length}%`,
+                position: 'relative',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'flex-end',
+                alignItems: 'center',
             }}
-          >
-            <span className="bar-label">{bar.value}</span>
-          </div>
+            >
+            <span
+                style={{
+                position: 'absolute',
+                top: '-24px',
+                fontSize: '14px',
+                fontWeight: 'bold',
+                color: '#333',
+                backgroundColor: '#fff',
+                padding: '1px 5px',
+                borderRadius: '3px',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+                }}
+            >
+                {bar.value}
+            </span>
+            </div>
         ))}
-      </div>
+        </div>
+
     </div>
   );
 };

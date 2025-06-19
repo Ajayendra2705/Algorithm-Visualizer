@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router>
       <header>
-        <h1>🔍 Algorithm Visualizer</h1>
+        <h1>Algorithm Visualizer</h1>
       </header>
       <div className="navbar">
         <Link to="/">Sorting</Link>

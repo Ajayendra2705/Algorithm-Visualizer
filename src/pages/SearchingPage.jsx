@@ -58,20 +58,20 @@ const SearchingPage = () => {
     <div className="searching-page">
       <div className="controls">
         <div className="row">
-          <button onClick={generateArray}>🔄 Generate</button>
+          <button onClick={generateArray}>Generate</button>
           <input
             type="number"
             value={target}
             onChange={(e) => setTarget(e.target.value)}
             placeholder="Enter target"
           />
-          <button onClick={() => linearSearch(array, setArray, +target, speedRef, playTone)}>🔍 Linear</button>
-          <button onClick={handleBinarySearch}>📚 Binary</button>
+          <button onClick={() => linearSearch(array, setArray, +target, speedRef, playTone)}>Linear</button>
+          <button onClick={handleBinarySearch}>Binary</button>
         </div>
 
         <div className="row slider-row">
           <label>Speed:</label>
-          <span>🐢 Slow</span>
+          <span>Slow</span>
           <input
             type="range"
             min="1"
@@ -79,7 +79,7 @@ const SearchingPage = () => {
             value={2001 - speed}
             onChange={(e) => setSpeed(2001 - Number(e.target.value))}
           />
-          <span>⚡ Fast</span>
+          <span>Fast</span>
 
           <label>
             <input
@@ -87,7 +87,7 @@ const SearchingPage = () => {
               checked={audioEnabled}
               onChange={() => setAudioEnabled(!audioEnabled)}
             />
-            🔈 Audio
+            Audio
           </label>
         </div>
       </div>
