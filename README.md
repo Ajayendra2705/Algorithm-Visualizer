@@ -38,9 +38,6 @@
 
 ## 📸 Visual Preview
 
-*(Add relevant screenshots or a demo GIF here to demonstrate the interface and algorithm animations.)*
-
-
 ## Sorting Page
 ![Algorithm Visualizer Demo](src/assets/sortimage.jpg)
 
