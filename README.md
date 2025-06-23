@@ -12,10 +12,8 @@
 - 🔢 **Algorithms Covered**
   - **Sorting Algorithms**: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort
   - **Searching Algorithms**: Linear Search, Binary Search
-  - *(Additional graph algorithms such as BFS and DFS coming soon)*
 
 - ⚙️ **Customizable Parameters**
-  - Control array size
   - Modify animation speed
   - Shuffle or regenerate input
 
