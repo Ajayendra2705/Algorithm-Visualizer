@@ -1,12 +1,48 @@
-# React + Vite
+# 🧠 Algorithm Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Algorithm Visualizer** is an interactive web application designed to visually demonstrate the inner workings of fundamental algorithms. Whether you are a student, educator, or enthusiast, this tool provides a dynamic and intuitive way to explore algorithms through animation and interactivity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- 🎞️ **Step-by-step Visualizations**  
+  Watch algorithms unfold one operation at a time, enhancing conceptual clarity.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔢 **Algorithms Covered**
+  - **Sorting Algorithms**: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort
+  - **Searching Algorithms**: Linear Search, Binary Search
+  - *(Additional graph algorithms such as BFS and DFS coming soon)*
+
+- ⚙️ **Customizable Parameters**
+  - Control array size
+  - Modify animation speed
+  - Shuffle or regenerate input
+
+- 🖱️ **Interactive Controls**
+  - Play / Pause / Reset
+  - Visual highlight of comparisons, swaps, and decisions
+
+- 📱 **Responsive Interface**  
+  Optimized for desktops, tablets, and mobile devices.
+
+---
+
+## 💡 Technology Stack
+
+| Framework   | Styling | Logic Management |
+|-------------|---------|------------------|
+| React.js    | CSS     | React Hooks      |
+
+---
+
+## 📸 Visual Preview
+
+*(Add relevant screenshots or a demo GIF here to demonstrate the interface and algorithm animations.)*
+
+
+## Sorting Page
+![Algorithm Visualizer Demo](src/assets/sortimage.jpg)
+
+## Searching Page
+![Algorithm Visualizer Demo](src/assets/searchimage.jpg)
